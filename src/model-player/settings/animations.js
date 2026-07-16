@@ -31,35 +31,35 @@ export default function createAnimationSettings(modelPlayer) {
 
     onManInit: function onManInit() {
       this.show = () => {
-        modelPlayer.orbit.setTarget(new THREE.Vector3(0, 85, 0));
+        modelPlayer.orbit.setTarget(new THREE.Vector3(0, 95, 0));
         modelPlayer.orbit.update();
       };
     },
 
     onWomanInit: function onWomanInit() {
       this.show = () => {
-        modelPlayer.orbit.setTarget(new THREE.Vector3(0, 70, 0));
+        modelPlayer.orbit.setTarget(new THREE.Vector3(0, 85, 0));
         modelPlayer.orbit.update();
       };
     },
 
     onGirlInit: function onGirlInit() {
       this.show = () => {
-        modelPlayer.orbit.setTarget(new THREE.Vector3(0, 60, 0));
+        modelPlayer.orbit.setTarget(new THREE.Vector3(0, 73, 0));
         modelPlayer.orbit.update();
       };
     },
 
     onBoyInit: function onBoyInit() {
       this.show = () => {
-        modelPlayer.orbit.setTarget(new THREE.Vector3(0, 65, 0));
+        modelPlayer.orbit.setTarget(new THREE.Vector3(0, 80, 0));
         modelPlayer.orbit.update();
       };
     },
 
     onChildInit: function onChildInit() {
       this.show = () => {
-        modelPlayer.orbit.setTarget(new THREE.Vector3(0, 50, 0));
+        modelPlayer.orbit.setTarget(new THREE.Vector3(0, 60, 0));
         modelPlayer.orbit.update();
       };
     },
