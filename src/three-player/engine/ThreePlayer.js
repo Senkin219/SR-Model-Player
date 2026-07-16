@@ -23,6 +23,47 @@ const attributeConstructors = {
   3: THREE.InterleavedBufferAttribute,
 };
 
+function addTexture(value, textures, renderTargetTextures) {
+  const values = Array.isArray(value) ? value : [value];
+  values.forEach((texture) => {
+    if (texture?.isTexture && !renderTargetTextures.has(texture)) textures.add(texture);
+  });
+}
+
+function addMaterial(material, materials, textures, renderTargetTextures) {
+  if (Array.isArray(material)) {
+    material.forEach((item) => addMaterial(item, materials, textures, renderTargetTextures));
+    return;
+  }
+  if (!material?.isMaterial || material === MSDFRuntime.MSDFTextMesh.DEFAULT_MATERIAL || materials.has(material)) return;
+  materials.add(material);
+  Object.values(material).forEach((value) => {
+    addTexture(value, textures, renderTargetTextures);
+  });
+  Object.values(material.uniforms || {}).forEach((uniform) => {
+    addTexture(uniform?.value, textures, renderTargetTextures);
+  });
+}
+
+function collectObjectResources(object, resources) {
+  const { geometries, materials, textures, renderTargetTextures } = resources;
+  if (object.geometry?.isBufferGeometry) geometries.add(object.geometry);
+  addMaterial(object.material, materials, textures, renderTargetTextures);
+  addMaterial(object.overrideMaterial, materials, textures, renderTargetTextures);
+  addMaterial(object.customDepthMaterial, materials, textures, renderTargetTextures);
+  addMaterial(object.customDistanceMaterial, materials, textures, renderTargetTextures);
+  [object.userData?.colorMaterial, object.userData?.passMaterial, object.userData?.depthMat, object.userData?.depthPassMat].forEach((material) =>
+    addMaterial(material, materials, textures, renderTargetTextures),
+  );
+
+  object.userData?.disposeRotateTip?.();
+  const animationMixer = object.userData?.animationMixer;
+  animationMixer?.stopAllAction?.();
+  animationMixer?.uncacheRoot?.(animationMixer.getRoot?.() || object);
+  object.state?.clearTracks?.();
+  object.state?.clearListeners?.();
+}
+
 class CapsuleGeometry extends THREE.LatheBufferGeometry {
   constructor(radius = 1, height = 1, capSegments = 4, radialSegments = 8) {
     const path = new THREE.Path();
@@ -168,6 +209,7 @@ export class ThreePlayer {
     this.mouseController = null;
     this.scenes = {};
     this.layoutData = layoutData;
+    this.disposed = false;
 
     this.initLayout(layoutData);
   }
@@ -1377,6 +1419,61 @@ export class ThreePlayer {
   disableTouch() {
     this.mouseController?.dispose();
     this.mouseController = null;
+  }
+
+  dispose() {
+    if (this.disposed) return;
+    this.disposed = true;
+    this.disableTouch();
+    Object.values(this.timelines).forEach((timeline) => timeline.stop?.());
+
+    const buffers = new Set(Object.values(this.buffers).filter(Boolean));
+    const renderTargets = new Set([...buffers].filter((buffer) => buffer.isWebGLRenderTarget));
+    const renderTargetTextures = new Set();
+    renderTargets.forEach((target) => {
+      const targetTextures = Array.isArray(target.texture) ? target.texture : [target.texture];
+      targetTextures.forEach((texture) => renderTargetTextures.add(texture));
+      if (target.depthTexture) renderTargetTextures.add(target.depthTexture);
+    });
+    const resources = {
+      geometries: new Set(Object.values(this.geometries)),
+      materials: new Set(),
+      textures: new Set(Object.values(this.textures)),
+      renderTargetTextures,
+    };
+
+    Object.values(this.scenes).forEach((scene) => {
+      scene.traverse((object) => collectObjectResources(object, resources));
+    });
+    Object.values(this.skeletons).forEach((skeleton) => skeleton?.dispose?.());
+
+    resources.materials.forEach((material) => material.dispose());
+    resources.geometries.forEach((geometry) => geometry?.dispose?.());
+    resources.textures.forEach((texture) => {
+      if (!renderTargetTextures.has(texture)) texture?.dispose?.();
+    });
+    buffers.forEach((buffer) => buffer.dispose?.());
+    Object.values(this.scenes).forEach((scene) => scene.clear?.());
+
+    this.loader.clearAllListener();
+    this.loader.result = {};
+    this.loader.sourcePool = {};
+    this.geometries = {};
+    this.spines = {};
+    this.textures = {};
+    this.buffers = {};
+    this.fonts = {};
+    this.sourcePool = {};
+    this.timelines = {};
+    this.skinning = {};
+    this.skeletons = {};
+    this.exportResources = {};
+    this.scenes = {};
+    this.layoutData = null;
+    this.animationSetting = {};
+    this.timelineSetting = {};
+    this.imageSetting = {};
+    this.renderer = null;
   }
 
   get domElement() {

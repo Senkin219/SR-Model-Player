@@ -462,24 +462,40 @@ export class ModelPlayer {
   dispose() {
     if (this.disposed) return;
     this.disposed = true;
+    const player = this.player;
+    const currentScene = player && this.currentScene ? player.scenes?.[`avatar_${this.currentScene}`] : null;
+    const playerBuffers = new Set(Object.values(player?.buffers || {}));
     globalThis.cancelAnimationFrame(this.requestId);
     ThreePlayer.getEventDispatcher().removeEventListener("speakStart", this.handleSpeakStart);
     this.orbit?.dispose();
+    this.sourceLoader.removeEventListener("progress");
     this.sourceLoader.removeEventListener("error");
     this.sourceLoader.removeEventListener("complete");
-    if (this.player) {
-      Object.values(this.player.timelines).forEach((timeline) => timeline.stop?.());
-      Object.values(this.player.geometries).forEach((geometry) => geometry.dispose());
-      Object.values(this.player.textures).forEach((texture) => texture.dispose());
-      Object.values(this.player.buffers).forEach((buffer) => buffer?.dispose?.());
-      this.player.disableTouch();
-      this.player.timelines = {};
-      this.player.scenes = {};
-    }
-    this.buffers.forEach((buffer) => buffer.dispose());
+    this.renderer?.setRenderTarget(null);
+    player?.dispose();
+    this.depthEdgePass?.dispose();
+    this.bloomCompositePass?.dispose();
+    this.fxaaPass?.dispose();
+    this.depthPassMaterial?.dispose();
+    this.buffers.forEach((buffer) => {
+      if (!playerBuffers.has(buffer)) buffer.dispose();
+    });
+    this.buffers = [];
     try {
       this.renderer?.forceContextLoss();
     } catch (_error) {}
     this.renderer?.dispose();
+    if (globalThis.player === player) globalThis.player = null;
+    if (globalThis.scene === currentScene) globalThis.scene = null;
+    this.player = null;
+    this.orbit = null;
+    this.camera = null;
+    this.depthEdgePass = null;
+    this.bloomCompositePass = null;
+    this.fxaaPass = null;
+    this.depthPassMaterial = null;
+    this.renderer = null;
+    this.canvas = null;
+    this.manifest = null;
   }
 }

@@ -29,6 +29,13 @@ class DepthEdgePass {
     this.renderer.clear();
     this.renderer.render(this.scene, this.camera);
   }
+
+  dispose() {
+    this.material.uniforms.diffuse.value = null;
+    this.material.dispose();
+    this.quad.geometry.dispose();
+    this.scene.clear();
+  }
 }
 
 export default DepthEdgePass;

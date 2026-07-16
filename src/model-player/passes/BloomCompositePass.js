@@ -82,6 +82,17 @@ class BloomCompositePass {
     this.renderer.clear();
     this.renderer.render(this.scene, this.camera);
   }
+
+  dispose() {
+    this.blurMat.uniforms.diffuse.value = null;
+    this.hdrMat.uniforms.diffuse.value = null;
+    this.hdrMat.uniforms.blurMap.value = null;
+    this.blurMat.dispose();
+    this.hdrMat.dispose();
+    this.quad.geometry.dispose();
+    this.renderBuffers.forEach((buffer) => buffer.dispose());
+    this.scene.clear();
+  }
 }
 
 export default BloomCompositePass;

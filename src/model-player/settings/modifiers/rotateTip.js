@@ -34,11 +34,18 @@ export default function initializeRotateTip() {
     );
   };
 
-  ThreePlayer.getEventDispatcher().addEventListener("changeRole", ({ data }) => {
+  const handleChangeRole = ({ data }) => {
     if (!shownForRole[data]) {
       shownForRole[data] = true;
       tip.show();
     }
-  });
+  };
+
+  ThreePlayer.getEventDispatcher().addEventListener("changeRole", handleChangeRole);
+  tip.userData.disposeRotateTip = () => {
+    ThreePlayer.getEventDispatcher().removeEventListener("changeRole", handleChangeRole);
+    gsap.killTweensOf(tip.material?.uniforms?.opacity);
+    tip.onBeforeRender = null;
+  };
   tip.show();
 }
