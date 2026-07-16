@@ -20,6 +20,7 @@ const UI_LAYOUT = {
   height: 750,
   type: "contain",
   scale: 1,
+  maxResolution: Infinity,
 };
 
 function cloneData(value) {
