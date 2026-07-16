@@ -1,0 +1,95 @@
+{
+  "common": [
+    {
+      "src": "/models/1.6/xueyi/images/Face_Mask.jpg",
+      "id": "Face_Mask",
+      "type": "image"
+    },
+    {
+      "src": "/models/1.6/xueyi/images/MetalMap.jpg",
+      "id": "MetalMap",
+      "type": "image"
+    }
+  ],
+  "avatar": {
+    "xueyi": {
+      "imgList": [
+        {
+          "src": "/models/1.6/xueyi/images/Avatar_Xueyi_00_Hair_Warm_Ramp.png",
+          "id": "Avatar_Xueyi_00_Hair_Warm_Ramp",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.6/xueyi/images/Avatar_Xueyi_00_Face_LightMap.jpg",
+          "id": "Avatar_Xueyi_00_Face_LightMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.6/xueyi/images/Avatar_Xueyi_00_Body_Warm_Ramp.png",
+          "id": "Avatar_Xueyi_00_Body_Warm_Ramp",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.6/xueyi/images/Avatar_Xueyi_00_Face_Color.jpg",
+          "id": "Avatar_Xueyi_00_Face_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.6/xueyi/images/Avatar_Xueyi_00_Body1_MatMap.jpg",
+          "id": "Avatar_Xueyi_00_Body1_MatMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.6/xueyi/images/Avatar_Xueyi_00_Hair_Color.jpg",
+          "id": "Avatar_Xueyi_00_Hair_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.6/xueyi/images/Avatar_Xueyi_00_Body2_MatMap.jpg",
+          "id": "Avatar_Xueyi_00_Body2_MatMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.6/xueyi/images/Avatar_Xueyi_00_Hair_LightMap.jpg",
+          "id": "Avatar_Xueyi_00_Hair_LightMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.6/xueyi/images/Avatar_Xueyi_00_Body2_Color.jpg",
+          "id": "Avatar_Xueyi_00_Body2_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.6/xueyi/images/Avatar_Xueyi_00_Body2_LightMap.jpg",
+          "id": "Avatar_Xueyi_00_Body2_LightMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.6/xueyi/images/Avatar_Xueyi_00_Body1_Color.jpg",
+          "id": "Avatar_Xueyi_00_Body1_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.6/xueyi/images/Avatar_Xueyi_00_Body1_LightMap.jpg",
+          "id": "Avatar_Xueyi_00_Body1_LightMap",
+          "type": "image"
+        }
+      ],
+      "model": {
+        "id": "avatar_xueyi_model",
+        "type": "arraybuffer",
+        "src": "/models/1.6/xueyi/avatar_xueyi_model.bin"
+      },
+      "scene": {
+        "id": "avatar_xueyi_scene",
+        "type": "json",
+        "src": "/models/1.6/xueyi/avatar_xueyi_scene.json"
+      },
+      "timeline": {
+        "id": "avatar_xueyi_timeline",
+        "type": "json",
+        "src": "/models/1.6/xueyi/avatar_xueyi_timeline.json"
+      }
+    }
+  }
+}

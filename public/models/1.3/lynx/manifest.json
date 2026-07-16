@@ -1,0 +1,80 @@
+{
+  "common": [
+    {
+      "src": "/models/1.3/lynx/images/Face_Mask.jpg",
+      "id": "Face_Mask",
+      "type": "image"
+    },
+    {
+      "src": "/models/1.3/lynx/images/MetalMap.jpg",
+      "id": "MetalMap",
+      "type": "image"
+    }
+  ],
+  "avatar": {
+    "lynx": {
+      "imgList": [
+        {
+          "src": "/models/1.3/lynx/images/Avatar_Lynx_00_Hair_Warm_Ramp.png",
+          "id": "Avatar_Lynx_00_Hair_Warm_Ramp",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.3/lynx/images/Avatar_Lynx_00_Body_Warm_Ramp.png",
+          "id": "Avatar_Lynx_00_Body_Warm_Ramp",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.3/lynx/images/Avatar_Lynx_00_Face_LightMap.jpg",
+          "id": "Avatar_Lynx_00_Face_LightMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.3/lynx/images/Avatar_Lynx_00_Face_Color.jpg",
+          "id": "Avatar_Lynx_00_Face_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.3/lynx/images/Avatar_Lynx_00_Hair_Color.jpg",
+          "id": "Avatar_Lynx_00_Hair_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.3/lynx/images/Avatar_Lynx_00_Hair_LightMap.jpg",
+          "id": "Avatar_Lynx_00_Hair_LightMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.3/lynx/images/Avatar_Lynx_00_Body_MatMap.jpg",
+          "id": "Avatar_Lynx_00_Body_MatMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.3/lynx/images/Avatar_Lynx_00_Body_Color.jpg",
+          "id": "Avatar_Lynx_00_Body_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.3/lynx/images/Avatar_Lynx_00_Body_LightMap.jpg",
+          "id": "Avatar_Lynx_00_Body_LightMap",
+          "type": "image"
+        }
+      ],
+      "model": {
+        "id": "avatar_lynx_model",
+        "type": "arraybuffer",
+        "src": "/models/1.3/lynx/avatar_lynx_model.bin"
+      },
+      "scene": {
+        "id": "avatar_lynx_scene",
+        "type": "json",
+        "src": "/models/1.3/lynx/avatar_lynx_scene.json"
+      },
+      "timeline": {
+        "id": "avatar_lynx_timeline",
+        "type": "json",
+        "src": "/models/1.3/lynx/avatar_lynx_timeline.json"
+      }
+    }
+  }
+}

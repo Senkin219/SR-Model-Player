@@ -1,0 +1,105 @@
+{
+  "common": [
+    {
+      "src": "/models/1.0/jingyuan/images/Face_Mask.jpg",
+      "id": "Face_Mask",
+      "type": "image"
+    },
+    {
+      "src": "/models/1.0/jingyuan/images/MetalMap.jpg",
+      "id": "MetalMap",
+      "type": "image"
+    }
+  ],
+  "avatar": {
+    "jingyuan": {
+      "imgList": [
+        {
+          "src": "/models/1.0/jingyuan/images/Avatar_JingYuan_00_Hair_Color.jpg",
+          "id": "Avatar_JingYuan_00_Hair_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/jingyuan/images/Avatar_JingYuan_00_Face_lightmap.jpg",
+          "id": "Avatar_JingYuan_00_Face_lightmap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/jingyuan/images/Avatar_JingYuan_00_Body1_LightMap.jpg",
+          "id": "Avatar_JingYuan_00_Body1_LightMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/jingyuan/images/Avatar_JingYuan_00_Face_Color.jpg",
+          "id": "Avatar_JingYuan_00_Face_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/jingyuan/images/Avatar_JingYuan_00_Weapon_ShadowRamp.png",
+          "id": "Avatar_JingYuan_00_Weapon_ShadowRamp",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/jingyuan/images/Avatar_JingYuan_00_Weapon_LightMap.jpg",
+          "id": "Avatar_JingYuan_00_Weapon_LightMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/jingyuan/images/Avatar_JingYuan_00_Hair_LightMap.jpg",
+          "id": "Avatar_JingYuan_00_Hair_LightMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/jingyuan/images/Avatar_JingYuan_00_Body2_Color.jpg",
+          "id": "Avatar_JingYuan_00_Body2_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/jingyuan/images/Avatar_JingYuan_00_Body_Warm_Ramp.png",
+          "id": "Avatar_JingYuan_00_Body_Warm_Ramp",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/jingyuan/images/Avatar_JingYuan_00_Hair_Warm_Ramp.png",
+          "id": "Avatar_JingYuan_00_Hair_Warm_Ramp",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/jingyuan/images/Avatar_JingYuan_00_Body1_Color.jpg",
+          "id": "Avatar_JingYuan_00_Body1_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/jingyuan/images/Avatar_JingYuan_00_Weapon_Color.jpg",
+          "id": "Avatar_JingYuan_00_Weapon_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/jingyuan/images/Avatar_JingYuan_00_Body_MatMap.jpg",
+          "id": "Avatar_JingYuan_00_Body_MatMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/jingyuan/images/Avatar_JingYuan_00_Body2_LightMap.jpg",
+          "id": "Avatar_JingYuan_00_Body2_LightMap",
+          "type": "image"
+        }
+      ],
+      "model": {
+        "id": "avatar_jingyuan_model",
+        "type": "arraybuffer",
+        "src": "/models/1.0/jingyuan/avatar_jingyuan_model.bin"
+      },
+      "scene": {
+        "id": "avatar_jingyuan_scene",
+        "type": "json",
+        "src": "/models/1.0/jingyuan/avatar_jingyuan_scene.json"
+      },
+      "timeline": {
+        "id": "avatar_jingyuan_timeline",
+        "type": "json",
+        "src": "/models/1.0/jingyuan/avatar_jingyuan_timeline.json"
+      }
+    }
+  }
+}

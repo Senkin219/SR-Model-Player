@@ -1,0 +1,100 @@
+{
+  "common": [
+    {
+      "src": "/models/CB3/tingyun/images/Avatar_Mar_7th_00_Face_LightMap.png",
+      "id": "Avatar_Mar_7th_00_Face_LightMap",
+      "type": "image"
+    },
+    {
+      "src": "/models/CB3/tingyun/images/Body_ShadowRamp.png",
+      "id": "Body_ShadowRamp",
+      "type": "image"
+    },
+    {
+      "src": "/models/CB3/tingyun/images/MetalMap.jpg",
+      "id": "MetalMap",
+      "type": "image"
+    },
+    {
+      "src": "/models/CB3/tingyun/images/Face_Mask.jpg",
+      "id": "Face_Mask",
+      "type": "image"
+    }
+  ],
+  "avatar": {
+    "tingyun": {
+      "imgList": [
+        {
+          "src": "/models/CB3/tingyun/images/Avatar_Tingyun_00_Body_Matmap.jpg",
+          "id": "Avatar_Tingyun_00_Body_Matmap",
+          "type": "image"
+        },
+        {
+          "src": "/models/CB3/tingyun/images/Avatar_Tingyun_00_Body1_Color.jpg",
+          "id": "Avatar_Tingyun_00_Body1_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/CB3/tingyun/images/Avatar_Tingyun_00_Body1_LightMap.jpg",
+          "id": "Avatar_Tingyun_00_Body1_LightMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/CB3/tingyun/images/Avatar_Tingyun_00_Body2_Color.jpg",
+          "id": "Avatar_Tingyun_00_Body2_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/CB3/tingyun/images/Avatar_Tingyun_00_Body2_LightMap.jpg",
+          "id": "Avatar_Tingyun_00_Body2_LightMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/CB3/tingyun/images/Avatar_Tingyun_00_Face_Color.jpg",
+          "id": "Avatar_Tingyun_00_Face_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/CB3/tingyun/images/Avatar_Tingyun_00_Hair_Color.jpg",
+          "id": "Avatar_Tingyun_00_Hair_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/CB3/tingyun/images/Avatar_Tingyun_00_Hair_LightMap.jpg",
+          "id": "Avatar_Tingyun_00_Hair_LightMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/CB3/tingyun/images/Avatar_Tingyun_00_Hair_Warm_Ramp.png",
+          "id": "Avatar_Tingyun_00_Hair_Warm_Ramp",
+          "type": "image"
+        },
+        {
+          "src": "/models/CB3/tingyun/images/Avatar_Tingyun_00_Warm_Ramp.png",
+          "id": "Avatar_Tingyun_00_Warm_Ramp",
+          "type": "image"
+        },
+        {
+          "src": "/models/CB3/tingyun/images/Avatar_Tingyun_00_Weapon_Color.jpg",
+          "id": "Avatar_Tingyun_00_Weapon_Color",
+          "type": "image"
+        }
+      ],
+      "model": {
+        "id": "avatar_tingyun_model",
+        "type": "arraybuffer",
+        "src": "/models/CB3/tingyun/avatar_tingyun_model.bin"
+      },
+      "scene": {
+        "id": "avatar_tingyun_scene",
+        "type": "json",
+        "src": "/models/CB3/tingyun/avatar_tingyun_scene.json"
+      },
+      "timeline": {
+        "id": "avatar_tingyun_timeline",
+        "type": "json",
+        "src": "/models/CB3/tingyun/avatar_tingyun_timeline.json"
+      }
+    }
+  }
+}

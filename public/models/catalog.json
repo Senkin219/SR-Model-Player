@@ -1,0 +1,269 @@
+{
+  "schemaVersion": 1,
+  "versions": [
+    {
+      "id": "CB3",
+      "label": "CB3",
+      "models": [
+        {
+          "id": "bailu",
+          "name": "白露",
+          "manifest": "/models/CB3/bailu/manifest.json",
+          "hasIdle": true
+        },
+        {
+          "id": "yanqing",
+          "name": "彦卿",
+          "manifest": "/models/CB3/yanqing/manifest.json",
+          "hasIdle": true
+        },
+        {
+          "id": "tingyun",
+          "name": "停云",
+          "manifest": "/models/CB3/tingyun/manifest.json",
+          "hasIdle": true
+        },
+        {
+          "id": "qingque",
+          "name": "青雀",
+          "manifest": "/models/CB3/qingque/manifest.json",
+          "hasIdle": true
+        }
+      ]
+    },
+    {
+      "id": "1.0",
+      "label": "1.0",
+      "models": [
+        {
+          "id": "mar7",
+          "name": "三月七",
+          "manifest": "/models/1.0/mar7/manifest.json",
+          "hasIdle": true
+        },
+        {
+          "id": "danheng",
+          "name": "丹恒",
+          "manifest": "/models/1.0/danheng/manifest.json",
+          "hasIdle": true
+        },
+        {
+          "id": "himeko",
+          "name": "姬子",
+          "manifest": "/models/1.0/himeko/manifest.json",
+          "hasIdle": true
+        },
+        {
+          "id": "welt",
+          "name": "瓦尔特",
+          "manifest": "/models/1.0/welt/manifest.json",
+          "hasIdle": true
+        },
+        {
+          "id": "seele",
+          "name": "希儿",
+          "manifest": "/models/1.0/seele/manifest.json",
+          "hasIdle": true
+        },
+        {
+          "id": "jingyuan",
+          "name": "景元",
+          "manifest": "/models/1.0/jingyuan/manifest.json",
+          "hasIdle": true
+        }
+      ]
+    },
+    {
+      "id": "1.1",
+      "label": "1.1",
+      "models": [
+        {
+          "id": "silwolf",
+          "name": "银狼",
+          "manifest": "/models/1.1/silwolf/manifest.json",
+          "hasIdle": true
+        },
+        {
+          "id": "luocha",
+          "name": "罗刹",
+          "manifest": "/models/1.1/luocha/manifest.json",
+          "hasIdle": true
+        },
+        {
+          "id": "yukong",
+          "name": "驭空",
+          "manifest": "/models/1.1/yukong/manifest.json",
+          "hasIdle": true
+        }
+      ]
+    },
+    {
+      "id": "1.2",
+      "label": "1.2",
+      "models": [
+        {
+          "id": "ren",
+          "name": "刃",
+          "manifest": "/models/1.2/ren/manifest.json",
+          "hasIdle": true
+        },
+        {
+          "id": "kafka",
+          "name": "卡芙卡",
+          "manifest": "/models/1.2/kafka/manifest.json",
+          "hasIdle": true
+        },
+        {
+          "id": "luka",
+          "name": "卢卡",
+          "manifest": "/models/1.2/luka/manifest.json",
+          "hasIdle": true
+        }
+      ]
+    },
+    {
+      "id": "1.3",
+      "label": "1.3",
+      "models": [
+        {
+          "id": "danhengil",
+          "name": "丹恒·饮月",
+          "manifest": "/models/1.3/danhengil/manifest.json",
+          "hasIdle": true
+        },
+        {
+          "id": "fuxuan",
+          "name": "符玄",
+          "manifest": "/models/1.3/fuxuan/manifest.json",
+          "hasIdle": true
+        },
+        {
+          "id": "lynx",
+          "name": "玲可",
+          "manifest": "/models/1.3/lynx/manifest.json",
+          "hasIdle": true
+        }
+      ]
+    },
+    {
+      "id": "1.4",
+      "label": "1.4",
+      "models": [
+        {
+          "id": "jingliu",
+          "name": "镜流",
+          "manifest": "/models/1.4/jingliu/manifest.json",
+          "hasIdle": false
+        },
+        {
+          "id": "topaz",
+          "name": "托帕",
+          "manifest": "/models/1.4/topaz/manifest.json",
+          "hasIdle": false
+        },
+        {
+          "id": "guinaifen",
+          "name": "桂乃芬",
+          "manifest": "/models/1.4/guinaifen/manifest.json",
+          "hasIdle": false
+        }
+      ]
+    },
+    {
+      "id": "1.5",
+      "label": "1.5",
+      "models": [
+        {
+          "id": "huohuo",
+          "name": "藿藿",
+          "manifest": "/models/1.5/huohuo/manifest.json",
+          "hasIdle": false
+        },
+        {
+          "id": "argenti",
+          "name": "银枝",
+          "manifest": "/models/1.5/argenti/manifest.json",
+          "hasIdle": false
+        },
+        {
+          "id": "hanya",
+          "name": "寒鸦",
+          "manifest": "/models/1.5/hanya/manifest.json",
+          "hasIdle": false
+        }
+      ]
+    },
+    {
+      "id": "1.6",
+      "label": "1.6",
+      "models": [
+        {
+          "id": "ruanmei",
+          "name": "阮·梅",
+          "manifest": "/models/1.6/ruanmei/manifest.json",
+          "hasIdle": false
+        },
+        {
+          "id": "drratio",
+          "name": "真理医生",
+          "manifest": "/models/1.6/drratio/manifest.json",
+          "hasIdle": false
+        },
+        {
+          "id": "xueyi",
+          "name": "雪衣",
+          "manifest": "/models/1.6/xueyi/manifest.json",
+          "hasIdle": false
+        }
+      ]
+    },
+    {
+      "id": "2.0",
+      "label": "2.0",
+      "models": [
+        {
+          "id": "blackSwan",
+          "name": "黑天鹅",
+          "manifest": "/models/2.0/blackSwan/manifest.json",
+          "hasIdle": false
+        },
+        {
+          "id": "sparkle",
+          "name": "花火",
+          "manifest": "/models/2.0/sparkle/manifest.json",
+          "hasIdle": false
+        },
+        {
+          "id": "misha",
+          "name": "米沙",
+          "manifest": "/models/2.0/misha/manifest.json",
+          "hasIdle": false
+        }
+      ]
+    },
+    {
+      "id": "2.1",
+      "label": "2.1",
+      "models": [
+        {
+          "id": "acheron",
+          "name": "黄泉",
+          "manifest": "/models/2.1/acheron/manifest.json",
+          "hasIdle": false
+        },
+        {
+          "id": "aventurine",
+          "name": "砂金",
+          "manifest": "/models/2.1/aventurine/manifest.json",
+          "hasIdle": false
+        },
+        {
+          "id": "gallagher",
+          "name": "加拉赫",
+          "manifest": "/models/2.1/gallagher/manifest.json",
+          "hasIdle": false
+        }
+      ]
+    }
+  ]
+}

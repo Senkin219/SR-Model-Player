@@ -1,0 +1,80 @@
+{
+  "common": [
+    {
+      "src": "/models/2.0/misha/images/Face_Mask.jpg",
+      "id": "Face_Mask",
+      "type": "image"
+    },
+    {
+      "src": "/models/2.0/misha/images/MetalMap.jpg",
+      "id": "MetalMap",
+      "type": "image"
+    }
+  ],
+  "avatar": {
+    "misha": {
+      "imgList": [
+        {
+          "src": "/models/2.0/misha/images/Avatar_Misha_00_Hair_Warm_Ramp.png",
+          "id": "Avatar_Misha_00_Hair_Warm_Ramp",
+          "type": "image"
+        },
+        {
+          "src": "/models/2.0/misha/images/Avatar_Misha_00_Face_LightMap.jpg",
+          "id": "Avatar_Misha_00_Face_LightMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/2.0/misha/images/Avatar_Misha_00_Body_Warm_Ramp.png",
+          "id": "Avatar_Misha_00_Body_Warm_Ramp",
+          "type": "image"
+        },
+        {
+          "src": "/models/2.0/misha/images/Avatar_Misha_00_Face_Color.jpg",
+          "id": "Avatar_Misha_00_Face_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/2.0/misha/images/Avatar_Misha_00_Body_MatMap_L.jpg",
+          "id": "Avatar_Misha_00_Body_MatMap_L",
+          "type": "image"
+        },
+        {
+          "src": "/models/2.0/misha/images/Avatar_Misha_00_Hair_Color.jpg",
+          "id": "Avatar_Misha_00_Hair_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/2.0/misha/images/Avatar_Misha_00_Hair_LightMap.jpg",
+          "id": "Avatar_Misha_00_Hair_LightMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/2.0/misha/images/Avatar_Misha_00_Body_Color_L.jpg",
+          "id": "Avatar_Misha_00_Body_Color_L",
+          "type": "image"
+        },
+        {
+          "src": "/models/2.0/misha/images/Avatar_Misha_00_Body_LightMap_L.jpg",
+          "id": "Avatar_Misha_00_Body_LightMap_L",
+          "type": "image"
+        }
+      ],
+      "model": {
+        "id": "avatar_misha_model",
+        "type": "arraybuffer",
+        "src": "/models/2.0/misha/avatar_misha_model.bin"
+      },
+      "scene": {
+        "id": "avatar_misha_scene",
+        "type": "json",
+        "src": "/models/2.0/misha/avatar_misha_scene.json"
+      },
+      "timeline": {
+        "id": "avatar_misha_timeline",
+        "type": "json",
+        "src": "/models/2.0/misha/avatar_misha_timeline.json"
+      }
+    }
+  }
+}

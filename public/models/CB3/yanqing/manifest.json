@@ -1,0 +1,95 @@
+{
+  "common": [
+    {
+      "src": "/models/CB3/yanqing/images/Avatar_Mar_7th_00_Face_LightMap.png",
+      "id": "Avatar_Mar_7th_00_Face_LightMap",
+      "type": "image"
+    },
+    {
+      "src": "/models/CB3/yanqing/images/Body_ShadowRamp.png",
+      "id": "Body_ShadowRamp",
+      "type": "image"
+    },
+    {
+      "src": "/models/CB3/yanqing/images/MetalMap.jpg",
+      "id": "MetalMap",
+      "type": "image"
+    },
+    {
+      "src": "/models/CB3/yanqing/images/Face_Mask.jpg",
+      "id": "Face_Mask",
+      "type": "image"
+    }
+  ],
+  "avatar": {
+    "yanqing": {
+      "imgList": [
+        {
+          "src": "/models/CB3/yanqing/images/Avatar_Yanqing_00_Body_Color.jpg",
+          "id": "Avatar_Yanqing_00_Body_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/CB3/yanqing/images/Avatar_Yanqing_00_Body_LightMap.jpg",
+          "id": "Avatar_Yanqing_00_Body_LightMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/CB3/yanqing/images/Avatar_Yanqing_00_Body_Matmap.jpg",
+          "id": "Avatar_Yanqing_00_Body_Matmap",
+          "type": "image"
+        },
+        {
+          "src": "/models/CB3/yanqing/images/Avatar_Yanqing_00_Body_Warm_Ramp.png",
+          "id": "Avatar_Yanqing_00_Body_Warm_Ramp",
+          "type": "image"
+        },
+        {
+          "src": "/models/CB3/yanqing/images/Avatar_Yanqing_00_Face_Color.jpg",
+          "id": "Avatar_Yanqing_00_Face_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/CB3/yanqing/images/Avatar_Yanqing_00_Hair_Color.jpg",
+          "id": "Avatar_Yanqing_00_Hair_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/CB3/yanqing/images/Avatar_Yanqing_00_Hair_LightMap.jpg",
+          "id": "Avatar_Yanqing_00_Hair_LightMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/CB3/yanqing/images/Avatar_Yanqing_00_Hair_Warm_Ramp.png",
+          "id": "Avatar_Yanqing_00_Hair_Warm_Ramp",
+          "type": "image"
+        },
+        {
+          "src": "/models/CB3/yanqing/images/Avatar_Yanqing_00_Weapon_Color.jpg",
+          "id": "Avatar_Yanqing_00_Weapon_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/CB3/yanqing/images/Boy_Face_LightMap.jpg",
+          "id": "Boy_Face_LightMap",
+          "type": "image"
+        }
+      ],
+      "model": {
+        "id": "avatar_yanqing_model",
+        "type": "arraybuffer",
+        "src": "/models/CB3/yanqing/avatar_yanqing_model.bin"
+      },
+      "scene": {
+        "id": "avatar_yanqing_scene",
+        "type": "json",
+        "src": "/models/CB3/yanqing/avatar_yanqing_scene.json"
+      },
+      "timeline": {
+        "id": "avatar_yanqing_timeline",
+        "type": "json",
+        "src": "/models/CB3/yanqing/avatar_yanqing_timeline.json"
+      }
+    }
+  }
+}

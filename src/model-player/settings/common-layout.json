@@ -1,0 +1,601 @@
+{
+  "geometries": {},
+  "sceneList": [
+    {
+      "id": "scene_ui",
+      "sceneConfig": {
+        "uiWidth": 750,
+        "uiHeight": 750
+      },
+      "camera": [
+        {
+          "id": "camera_default",
+          "isDefault": true,
+          "position": [
+            0,
+            0,
+            1800
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "camera": {
+            "type": 2,
+            "near": 0.01,
+            "far": 4000,
+            "left": -375,
+            "right": 375,
+            "top": 375,
+            "bottom": -375
+          }
+        }
+      ],
+      "children": [
+        {
+          "type": 1,
+          "name": "scene_main",
+          "uuid": "75b3ff66-1581-4308-8e34-ff6732789fdc",
+          "visible": true,
+          "renderOrder": 0,
+          "geometry": {
+            "type": 2,
+            "config": {
+              "width": 750,
+              "height": 750
+            }
+          },
+          "material": [
+            {
+              "id": "FXAA",
+              "uniforms": [
+                {
+                  "type": "u",
+                  "key": "resolution",
+                  "value": "resolution"
+                },
+                {
+                  "type": "b",
+                  "key": "diffuse",
+                  "value": "AVATAR_BUFFER"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "buffer": ""
+    },
+    {
+      "id": "scene_particle",
+      "sceneConfig": {
+        "uiWidth": 750,
+        "uiHeight": 750
+      },
+      "camera": [
+        {
+          "id": "camera_default",
+          "isDefault": true,
+          "position": [
+            0,
+            200,
+            500
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "camera": {
+            "type": 1,
+            "near": 0.0001,
+            "far": 10000,
+            "fov": 32,
+            "aspect": 1
+          }
+        }
+      ],
+      "children": [
+        {
+          "type": 1,
+          "name": "tips",
+          "uuid": "c8905b7b-95bd-4cd6-a5d5-a61b3fcf356b",
+          "visible": true,
+          "renderOrder": 0,
+          "geometry": {
+            "type": 2,
+            "config": {
+              "width": 60,
+              "height": 60
+            }
+          },
+          "material": [
+            {
+              "id": "BASIC",
+              "depthTest": false,
+              "depthWrite": false,
+              "uniforms": [
+                {
+                  "type": "t",
+                  "key": "diffuse",
+                  "value": "avatar_rotate_tips"
+                },
+                {
+                  "type": "f",
+                  "key": "opacity",
+                  "value": 0
+                }
+              ]
+            }
+          ],
+          "rotation": [
+            -1.5708,
+            0,
+            0
+          ],
+          "modifier": [
+            {
+              "id": "rotateTip",
+              "data": {}
+            }
+          ],
+          "autoMatrix": true
+        }
+      ],
+      "hooksFunc": {
+        "init": "onEffectInit",
+        "render": ""
+      }
+    },
+    {
+      "id": "scene_main",
+      "sceneConfig": {
+        "uiWidth": 750,
+        "uiHeight": 750
+      },
+      "camera": [
+        {
+          "id": "camera_default",
+          "isDefault": true,
+          "position": [
+            0,
+            250,
+            350
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "camera": {
+            "type": 1,
+            "near": 0.0001,
+            "far": 10000,
+            "fov": 32,
+            "aspect": 1
+          }
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "scene_bg",
+      "sceneConfig": {
+        "uiWidth": 1080,
+        "uiHeight": 1080
+      },
+      "camera": [
+        {
+          "id": "camera_default",
+          "isDefault": true,
+          "position": [
+            0,
+            200,
+            500
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "camera": {
+            "type": 1,
+            "near": 0.0001,
+            "far": 10000,
+            "fov": 32,
+            "aspect": 1
+          }
+        }
+      ],
+      "children": [
+        {
+          "type": 1,
+          "name": "plane",
+          "uuid": "6da5eb48-7839-4f54-88fd-7d3705da288b",
+          "visible": true,
+          "renderOrder": 0,
+          "geometry": {
+            "type": 2,
+            "config": {
+              "width": 740,
+              "height": 740
+            }
+          },
+          "material": [
+            {
+              "id": "BASIC",
+              "depthTest": false,
+              "depthWrite": false,
+              "uniforms": [
+                {
+                  "type": "t",
+                  "key": "diffuse",
+                  "value": ""
+                },
+                {
+                  "type": "c",
+                  "key": "color",
+                  "value": 16777215
+                }
+              ],
+              "defines": {
+                "USE_TEXTURE": 0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shaderMap": {
+    "BASIC": {
+      "vertexShader": "basic_vert",
+      "fragmentShader": "basic_frag",
+      "transparent": true,
+      "uniforms": [
+        {
+          "type": "f",
+          "key": "opacity",
+          "value": 1
+        },
+        {
+          "type": "t",
+          "key": "diffuse",
+          "value": "DEFAULT"
+        },
+        {
+          "type": "c",
+          "key": "color",
+          "value": 16712000
+        }
+      ],
+      "defines": {
+        "USE_TEXTURE": 1,
+        "ALPHA_TEST": 0
+      }
+    },
+    "FXAA": {
+      "vertexShader": "fxaa_vert",
+      "fragmentShader": "fxaa_frag",
+      "transparent": true,
+      "depthTest": false,
+      "depthWrite": false,
+      "uniforms": [
+        {
+          "type": "u",
+          "key": "resolution",
+          "value": "resolution"
+        },
+        {
+          "type": "b",
+          "key": "diffuse",
+          "value": "AVATAR_BUFFER"
+        },
+        {
+          "type": "f",
+          "key": "opacity",
+          "value": 1
+        }
+      ]
+    },
+    "CHARACTER_BASE": {
+      "vertexShader": "character_base_vert",
+      "fragmentShader": "character_base_frag",
+      "transparent": true,
+      "uniforms": [
+        {
+          "type": "t",
+          "key": "diffuse",
+          "value": ""
+        },
+        {
+          "type": "f",
+          "key": "rimIntensity",
+          "value": 0
+        },
+        {
+          "type": "t",
+          "key": "lightMap",
+          "value": ""
+        },
+        {
+          "type": "u",
+          "key": "lightDir",
+          "value": "offset"
+        },
+        {
+          "type": "u",
+          "key": "resolution",
+          "value": "resolution"
+        },
+        {
+          "type": "t",
+          "key": "shadowRamp",
+          "value": "Body_ShadowRamp"
+        },
+        {
+          "type": "t",
+          "key": "matMap",
+          "value": ""
+        },
+        {
+          "type": "t",
+          "key": "metalMap",
+          "value": "MetalMap"
+        },
+        {
+          "type": "b",
+          "key": "outlineMap",
+          "value": "OUTLINE_BUFFER"
+        },
+        {
+          "type": "c",
+          "key": "metalDarkColor",
+          "value": 11107953
+        },
+        {
+          "type": "c",
+          "key": "metalLightColor",
+          "value": 14405056
+        },
+        {
+          "type": "f",
+          "key": "metallness1",
+          "value": 0
+        },
+        {
+          "type": "f",
+          "key": "metallness2",
+          "value": 0
+        },
+        {
+          "type": "f",
+          "key": "metallness3",
+          "value": 0
+        },
+        {
+          "type": "f",
+          "key": "metallness4",
+          "value": 0
+        },
+        {
+          "type": "f",
+          "key": "metallness5",
+          "value": 0
+        },
+        {
+          "type": "v4",
+          "key": "shadowColor1",
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "v4",
+          "key": "shadowColor2",
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "v4",
+          "key": "shadowColor3",
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "v4",
+          "key": "shadowColor4",
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "v4",
+          "key": "shadowColor5",
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "v4",
+          "key": "shadowColor6",
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "v4",
+          "key": "shadowColor7",
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "v4",
+          "key": "shadowColor8",
+          "value": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "type": "u",
+          "key": "brightness",
+          "value": "brightness"
+        },
+        {
+          "type": "u",
+          "key": "exposure",
+          "value": "exposure"
+        },
+        {
+          "type": "b",
+          "key": "faceDepthMap",
+          "value": "DEPTH_BUFFER"
+        }
+      ],
+      "defines": {
+        "USE_LIGHTMAP": 1,
+        "USE_SHADOW_RAMP": 1,
+        "USE_MATMAP": 0,
+        "MAT_CHANNEL": 0,
+        "USE_METALMAP": 0,
+        "USE_FACEMAP": 0,
+        "USE_UV2": 0,
+        "USE_FADE": 0,
+        "USE_DEPTH": 0
+      }
+    },
+    "CHARACTER_OUTLINE": {
+      "vertexShader": "character_outline_vert",
+      "fragmentShader": "character_outline_frag",
+      "transparent": true,
+      "side": 1,
+      "uniforms": [
+        {
+          "type": "t",
+          "key": "lightMap",
+          "value": ""
+        },
+        {
+          "type": "c",
+          "key": "strokeColor",
+          "value": 0
+        },
+        {
+          "type": "c",
+          "key": "strokeColor2",
+          "value": 0
+        },
+        {
+          "type": "c",
+          "key": "strokeColor3",
+          "value": 0
+        },
+        {
+          "type": "c",
+          "key": "strokeColor4",
+          "value": 0
+        },
+        {
+          "type": "c",
+          "key": "strokeColor5",
+          "value": 0
+        },
+        {
+          "type": "c",
+          "key": "strokeColor6",
+          "value": 0
+        },
+        {
+          "type": "c",
+          "key": "strokeColor7",
+          "value": 0
+        },
+        {
+          "type": "u",
+          "key": "brightness",
+          "value": "brightness"
+        },
+        {
+          "type": "u",
+          "key": "exposure",
+          "value": "exposure"
+        },
+        {
+          "type": "b",
+          "key": "faceDepthMap",
+          "value": "DEPTH_MAP"
+        },
+        {
+          "type": "u",
+          "key": "resolution",
+          "value": "resolution"
+        },
+        {
+          "type": "f",
+          "key": "opacity",
+          "value": 1
+        }
+      ],
+      "defines": {
+        "MAT_CHANNEL": 0,
+        "DISCARD": 0,
+        "SIMPLE_MODE": 1,
+        "USE_DEPTH": 0
+      }
+    },
+    "REFLECT": {
+      "vertexShader": "reflect_vert",
+      "fragmentShader": "reflect_frag",
+      "transparent": true,
+      "uniforms": [
+        {
+          "type": "b",
+          "key": "diffuse",
+          "value": "REF_BUFFER"
+        },
+        {
+          "type": "u",
+          "key": "resolution",
+          "value": "resolution"
+        },
+        {
+          "type": "b",
+          "key": "depth",
+          "value": "REF_DEPTH_BUFFER"
+        }
+      ]
+    },
+    "DEPTH": {
+      "vertexShader": "depth_vert",
+      "fragmentShader": "depth_frag"
+    }
+  }
+}

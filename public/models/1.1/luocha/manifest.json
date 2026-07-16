@@ -1,0 +1,95 @@
+{
+  "common": [
+    {
+      "src": "/models/1.1/luocha/images/Face_Mask.jpg",
+      "id": "Face_Mask",
+      "type": "image"
+    },
+    {
+      "src": "/models/1.1/luocha/images/MetalMap.jpg",
+      "id": "MetalMap",
+      "type": "image"
+    }
+  ],
+  "avatar": {
+    "luocha": {
+      "imgList": [
+        {
+          "src": "/models/1.1/luocha/images/Avatar_Luocha_00_Hair_LightMap.jpg",
+          "id": "Avatar_Luocha_00_Hair_LightMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.1/luocha/images/Avatar_Luocha_00_Body_Warm_Ramp.png",
+          "id": "Avatar_Luocha_00_Body_Warm_Ramp",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.1/luocha/images/Avatar_Luocha_00_Body_MatMap.jpg",
+          "id": "Avatar_Luocha_00_Body_MatMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.1/luocha/images/Avatar_Luocha_00_Body1_Color.jpg",
+          "id": "Avatar_Luocha_00_Body1_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.1/luocha/images/Avatar_Luocha_00_Body1_LightMap.jpg",
+          "id": "Avatar_Luocha_00_Body1_LightMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.1/luocha/images/Avatar_Luocha_00_Hair_Color.jpg",
+          "id": "Avatar_Luocha_00_Hair_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.1/luocha/images/Avatar_Luocha_00_Hair_Warm_Ramp.png",
+          "id": "Avatar_Luocha_00_Hair_Warm_Ramp",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.1/luocha/images/Avatar_Luocha_00_Body2_LightMap.jpg",
+          "id": "Avatar_Luocha_00_Body2_LightMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.1/luocha/images/Avatar_Luocha_00_Face_lightmap.jpg",
+          "id": "Avatar_Luocha_00_Face_lightmap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.1/luocha/images/Avatar_Luocha_00_Face_Color.jpg",
+          "id": "Avatar_Luocha_00_Face_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.1/luocha/images/Avatar_Luocha_00_Weapon_Color.jpg",
+          "id": "Avatar_Luocha_00_Weapon_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.1/luocha/images/Avatar_Luocha_00_Body2_Color.jpg",
+          "id": "Avatar_Luocha_00_Body2_Color",
+          "type": "image"
+        }
+      ],
+      "model": {
+        "id": "avatar_luocha_model",
+        "type": "arraybuffer",
+        "src": "/models/1.1/luocha/avatar_luocha_model.bin"
+      },
+      "scene": {
+        "id": "avatar_luocha_scene",
+        "type": "json",
+        "src": "/models/1.1/luocha/avatar_luocha_scene.json"
+      },
+      "timeline": {
+        "id": "avatar_luocha_timeline",
+        "type": "json",
+        "src": "/models/1.1/luocha/avatar_luocha_timeline.json"
+      }
+    }
+  }
+}

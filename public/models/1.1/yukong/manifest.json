@@ -1,0 +1,90 @@
+{
+  "common": [
+    {
+      "src": "/models/1.1/yukong/images/Face_Mask.jpg",
+      "id": "Face_Mask",
+      "type": "image"
+    },
+    {
+      "src": "/models/1.1/yukong/images/MetalMap.jpg",
+      "id": "MetalMap",
+      "type": "image"
+    }
+  ],
+  "avatar": {
+    "yukong": {
+      "imgList": [
+        {
+          "src": "/models/1.1/yukong/images/Avatar_Yukong_00_Body_Warm_Ramp.png",
+          "id": "Avatar_Yukong_00_Body_Warm_Ramp",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.1/yukong/images/Avatar_Yukong_00_Face_LightMap.jpg",
+          "id": "Avatar_Yukong_00_Face_LightMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.1/yukong/images/Avatar_Yukong_00_Body_Color_ALP.jpg",
+          "id": "Avatar_Yukong_00_Body_Color_ALP",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.1/yukong/images/Avatar_Yukong_00_Body_LightMap.jpg",
+          "id": "Avatar_Yukong_00_Body_LightMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.1/yukong/images/Avatar_Yukong_00_Hair_Warm_Ramp.png",
+          "id": "Avatar_Yukong_00_Hair_Warm_Ramp",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.1/yukong/images/Avatar_Yukong_00_Weapon_Color.png",
+          "id": "Avatar_Yukong_00_Weapon_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.1/yukong/images/Avatar_Yukong_00_Hair_LightMap.png",
+          "id": "Avatar_Yukong_00_Hair_LightMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.1/yukong/images/Avatar_Yukong_00_Face_Color.png",
+          "id": "Avatar_Yukong_00_Face_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.1/yukong/images/Avatar_Yukong_00_Body_Color_A.jpg",
+          "id": "Avatar_Yukong_00_Body_Color_A",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.1/yukong/images/Avatar_Yukong_00_Hair_Color.png",
+          "id": "Avatar_Yukong_00_Hair_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.1/yukong/images/Avatar_Yukong_00_Body_MetaMap.jpg",
+          "id": "Avatar_Yukong_00_Body_MetaMap",
+          "type": "image"
+        }
+      ],
+      "model": {
+        "id": "avatar_yukong_model",
+        "type": "arraybuffer",
+        "src": "/models/1.1/yukong/avatar_yukong_model.bin"
+      },
+      "scene": {
+        "id": "avatar_yukong_scene",
+        "type": "json",
+        "src": "/models/1.1/yukong/avatar_yukong_scene.json"
+      },
+      "timeline": {
+        "id": "avatar_yukong_timeline",
+        "type": "json",
+        "src": "/models/1.1/yukong/avatar_yukong_timeline.json"
+      }
+    }
+  }
+}

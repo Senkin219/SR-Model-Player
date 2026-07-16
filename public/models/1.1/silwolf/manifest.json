@@ -1,0 +1,85 @@
+{
+  "common": [
+    {
+      "src": "/models/1.1/silwolf/images/Face_Mask.jpg",
+      "id": "Face_Mask",
+      "type": "image"
+    },
+    {
+      "src": "/models/1.1/silwolf/images/MetalMap.jpg",
+      "id": "MetalMap",
+      "type": "image"
+    }
+  ],
+  "avatar": {
+    "silwolf": {
+      "imgList": [
+        {
+          "src": "/models/1.1/silwolf/images/Avatar_silwolf_00_Face_LightMap.jpg",
+          "id": "Avatar_silwolf_00_Face_LightMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.1/silwolf/images/Avatar_Silwolf_00_Hair_Warm_Ramp.png",
+          "id": "Avatar_Silwolf_00_Hair_Warm_Ramp",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.1/silwolf/images/Avatar_Silwolf_00_Hair_LightMap.png",
+          "id": "Avatar_Silwolf_00_Hair_LightMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.1/silwolf/images/Avatar_Silwolf_00_Body_Warm_Ramp.png",
+          "id": "Avatar_Silwolf_00_Body_Warm_Ramp",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.1/silwolf/images/Avatar_Silwolf_00_Hair_Color.png",
+          "id": "Avatar_Silwolf_00_Hair_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.1/silwolf/images/Avatar_Silwolf_00_Face_Color.jpg",
+          "id": "Avatar_Silwolf_00_Face_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.1/silwolf/images/Avatar_Silwolf_00_Body_Color_A_L.jpg",
+          "id": "Avatar_Silwolf_00_Body_Color_A_L",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.1/silwolf/images/Avatar_Silwolf_00_Body_Color_ALP.jpg",
+          "id": "Avatar_Silwolf_00_Body_Color_ALP",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.1/silwolf/images/Avatar_Silwolf_00_Body_MatMap.jpg",
+          "id": "Avatar_Silwolf_00_Body_MatMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.1/silwolf/images/Avatar_Silwolf_00_Body_LightMap_L.jpg",
+          "id": "Avatar_Silwolf_00_Body_LightMap_L",
+          "type": "image"
+        }
+      ],
+      "model": {
+        "id": "avatar_silwolf_model",
+        "type": "arraybuffer",
+        "src": "/models/1.1/silwolf/avatar_silwolf_model.bin"
+      },
+      "scene": {
+        "id": "avatar_silwolf_scene",
+        "type": "json",
+        "src": "/models/1.1/silwolf/avatar_silwolf_scene.json"
+      },
+      "timeline": {
+        "id": "avatar_silwolf_timeline",
+        "type": "json",
+        "src": "/models/1.1/silwolf/avatar_silwolf_timeline.json"
+      }
+    }
+  }
+}

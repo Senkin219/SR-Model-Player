@@ -1,0 +1,85 @@
+{
+  "common": [
+    {
+      "src": "/models/1.0/danheng/images/Face_Mask.jpg",
+      "id": "Face_Mask",
+      "type": "image"
+    },
+    {
+      "src": "/models/1.0/danheng/images/MetalMap.jpg",
+      "id": "MetalMap",
+      "type": "image"
+    }
+  ],
+  "avatar": {
+    "danheng": {
+      "imgList": [
+        {
+          "src": "/models/1.0/danheng/images/Avatar_DanHeng_00_Weapon_Color_A.jpg",
+          "id": "Avatar_DanHeng_00_Weapon_Color_A",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/danheng/images/Avatar_DanHeng_00_Hair_lightmap.jpg",
+          "id": "Avatar_DanHeng_00_Hair_lightmap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/danheng/images/Avatar_DanHeng_00_Face_lightmap.jpg",
+          "id": "Avatar_DanHeng_00_Face_lightmap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/danheng/images/Avatar_DanHeng_00_Hair_Warm_Ramp.png",
+          "id": "Avatar_DanHeng_00_Hair_Warm_Ramp",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/danheng/images/Avatar_DanHeng_00_Hair_Color.jpg",
+          "id": "Avatar_DanHeng_00_Hair_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/danheng/images/Avatar_DanHeng_00_Face_Color.jpg",
+          "id": "Avatar_DanHeng_00_Face_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/danheng/images/Avatar_DanHeng_00_Body_Matmap.jpg",
+          "id": "Avatar_DanHeng_00_Body_Matmap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/danheng/images/Avatar_DanHeng_00_Body_Warm_Ramp.png",
+          "id": "Avatar_DanHeng_00_Body_Warm_Ramp",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/danheng/images/Avatar_DanHeng_00_Body_Color.jpg",
+          "id": "Avatar_DanHeng_00_Body_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/danheng/images/Avatar_DanHeng_00_Body_Lightmap.jpg",
+          "id": "Avatar_DanHeng_00_Body_Lightmap",
+          "type": "image"
+        }
+      ],
+      "model": {
+        "id": "avatar_danheng_model",
+        "type": "arraybuffer",
+        "src": "/models/1.0/danheng/avatar_danheng_model.bin"
+      },
+      "scene": {
+        "id": "avatar_danheng_scene",
+        "type": "json",
+        "src": "/models/1.0/danheng/avatar_danheng_scene.json"
+      },
+      "timeline": {
+        "id": "avatar_danheng_timeline",
+        "type": "json",
+        "src": "/models/1.0/danheng/avatar_danheng_timeline.json"
+      }
+    }
+  }
+}

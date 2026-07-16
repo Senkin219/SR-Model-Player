@@ -1,0 +1,90 @@
+{
+  "common": [
+    {
+      "src": "/models/1.0/himeko/images/Face_Mask.jpg",
+      "id": "Face_Mask",
+      "type": "image"
+    },
+    {
+      "src": "/models/1.0/himeko/images/MetalMap.jpg",
+      "id": "MetalMap",
+      "type": "image"
+    }
+  ],
+  "avatar": {
+    "himeko": {
+      "imgList": [
+        {
+          "src": "/models/1.0/himeko/images/Avatar_Himeko_00_Hair_LightMap.jpg",
+          "id": "Avatar_Himeko_00_Hair_LightMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/himeko/images/Avatar_Himeko_00_Body_Matmap.png",
+          "id": "Avatar_Himeko_00_Body_Matmap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/himeko/images/Avatar_Himeko_00_Body1_Color.jpg",
+          "id": "Avatar_Himeko_00_Body1_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/himeko/images/Avatar_Himeko_00_Body2_Lightmap.jpg",
+          "id": "Avatar_Himeko_00_Body2_Lightmap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/himeko/images/Avatar_Himeko_00_Body1_Lightmap.jpg",
+          "id": "Avatar_Himeko_00_Body1_Lightmap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/himeko/images/Avatar_Himeko_00_Body_Warm_Ramp.png",
+          "id": "Avatar_Himeko_00_Body_Warm_Ramp",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/himeko/images/Avatar_Himeko_00_Body2_Color.jpg",
+          "id": "Avatar_Himeko_00_Body2_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/himeko/images/Avatar_Himeko_00_Hair_Warm_Ramp.png",
+          "id": "Avatar_Himeko_00_Hair_Warm_Ramp",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/himeko/images/Avatar_Himeko_00_Hair_Color.jpg",
+          "id": "Avatar_Himeko_00_Hair_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/himeko/images/Avatar_Himeko_00_Face_LightMap.jpg",
+          "id": "Avatar_Himeko_00_Face_LightMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.0/himeko/images/Avatar_Himeko_00_Face_Color.jpg",
+          "id": "Avatar_Himeko_00_Face_Color",
+          "type": "image"
+        }
+      ],
+      "model": {
+        "id": "avatar_himeko_model",
+        "type": "arraybuffer",
+        "src": "/models/1.0/himeko/avatar_himeko_model.bin"
+      },
+      "scene": {
+        "id": "avatar_himeko_scene",
+        "type": "json",
+        "src": "/models/1.0/himeko/avatar_himeko_scene.json"
+      },
+      "timeline": {
+        "id": "avatar_himeko_timeline",
+        "type": "json",
+        "src": "/models/1.0/himeko/avatar_himeko_timeline.json"
+      }
+    }
+  }
+}

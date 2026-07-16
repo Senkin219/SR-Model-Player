@@ -1,0 +1,95 @@
+{
+  "common": [
+    {
+      "src": "/models/1.2/kafka/images/Face_Mask.jpg",
+      "id": "Face_Mask",
+      "type": "image"
+    },
+    {
+      "src": "/models/1.2/kafka/images/MetalMap.jpg",
+      "id": "MetalMap",
+      "type": "image"
+    }
+  ],
+  "avatar": {
+    "kafka": {
+      "imgList": [
+        {
+          "src": "/models/1.2/kafka/images/Avatar_kafka_00_Face_LightMap.jpg",
+          "id": "Avatar_kafka_00_Face_LightMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.2/kafka/images/Avatar_Kafka_00_Hair_Color.jpg",
+          "id": "Avatar_Kafka_00_Hair_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.2/kafka/images/Avatar_Kafka_00_Hair_LightMap.jpg",
+          "id": "Avatar_Kafka_00_Hair_LightMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.2/kafka/images/Avatar_Kafka_00_Body2_LightMap.jpg",
+          "id": "Avatar_Kafka_00_Body2_LightMap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.2/kafka/images/Avatar_Kafka_00_Body1_Color_ALP.jpg",
+          "id": "Avatar_Kafka_00_Body1_Color_ALP",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.2/kafka/images/Avatar_Kafka_00_Body_Warm_Ramp.png",
+          "id": "Avatar_Kafka_00_Body_Warm_Ramp",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.2/kafka/images/Avatar_Kafka_00_Hair_Warm_Ramp.png",
+          "id": "Avatar_Kafka_00_Hair_Warm_Ramp",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.2/kafka/images/Avatar_Kafka_00_Body1_Color_A.jpg",
+          "id": "Avatar_Kafka_00_Body1_Color_A",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.2/kafka/images/Avatar_Kafka_00_Face_Color.jpg",
+          "id": "Avatar_Kafka_00_Face_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.2/kafka/images/Avatar_Kafka_00_Body_Matmap.jpg",
+          "id": "Avatar_Kafka_00_Body_Matmap",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.2/kafka/images/Avatar_Kafka_00_Body2_Color.jpg",
+          "id": "Avatar_Kafka_00_Body2_Color",
+          "type": "image"
+        },
+        {
+          "src": "/models/1.2/kafka/images/Avatar_Kafka_00_Body1_LightMap.jpg",
+          "id": "Avatar_Kafka_00_Body1_LightMap",
+          "type": "image"
+        }
+      ],
+      "model": {
+        "id": "avatar_kafka_model",
+        "type": "arraybuffer",
+        "src": "/models/1.2/kafka/avatar_kafka_model.bin"
+      },
+      "scene": {
+        "id": "avatar_kafka_scene",
+        "type": "json",
+        "src": "/models/1.2/kafka/avatar_kafka_scene.json"
+      },
+      "timeline": {
+        "id": "avatar_kafka_timeline",
+        "type": "json",
+        "src": "/models/1.2/kafka/avatar_kafka_timeline.json"
+      }
+    }
+  }
+}
