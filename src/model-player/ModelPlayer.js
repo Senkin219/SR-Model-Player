@@ -223,7 +223,7 @@ export class ModelPlayer {
   }
 
   async init3D() {
-    this.renderer = new THREE.WebGL1Renderer({
+    this.renderer = new THREE.WebGLRenderer({
       canvas: this.canvas,
       alpha: true,
       premultipliedAlpha: false,
@@ -291,9 +291,21 @@ export class ModelPlayer {
   }
 
   initEffect() {
-    for (let index = 0; index < 4; index += 1) {
-      this.buffers[index] = index > 2 ? new THREE.WebGLRenderTarget(1024, 1024, { format: THREE.RGBFormat }) : new THREE.WebGLRenderTarget(1, 1);
+    if (this.renderer.capabilities.isWebGL2 && THREE.WebGLMultisampleRenderTarget) {
+      const gl = this.renderer.getContext();
+      this.buffers[0] = new THREE.WebGLMultisampleRenderTarget(1, 1, {
+        depthBuffer: true,
+        stencilBuffer: false,
+      });
+      this.buffers[0].samples = Math.min(4, gl.getParameter(gl.MAX_SAMPLES));
+    } else {
+      this.buffers[0] = new THREE.WebGLRenderTarget(1, 1);
     }
+    this.buffers[1] = new THREE.WebGLRenderTarget(1, 1);
+    this.buffers[2] = new THREE.WebGLRenderTarget(1, 1);
+    this.buffers[3] = new THREE.WebGLRenderTarget(1024, 1024, {
+      format: THREE.RGBFormat,
+    });
     this.depthPassMaterial = this.player.getMaterial([
       {
         id: "DEPTH",
@@ -436,8 +448,9 @@ export class ModelPlayer {
       }
     });
     this.renderer.render(scene, camera);
-    this.bloomCompositePass.render(this.buffers[1]);
-    this.fxaaPass.render(null);
+    // this.bloomCompositePass.render(this.buffers[1]);
+    // this.fxaaPass.render(null);
+    this.bloomCompositePass.render(null);
   }
 
   render = () => {

@@ -126,7 +126,7 @@ function getViewSettings() {
 function resizePlayer() {
   if (!modelPlayer || !ready.value || !viewport.value) return;
   const { width, height } = viewport.value.getBoundingClientRect();
-  modelPlayer.resize(width, height, Math.max(2, globalThis.devicePixelRatio));
+  modelPlayer.resize(width, height, Math.min(2, 1.1 * globalThis.devicePixelRatio));
 }
 
 function getManifestResources(manifest) {
